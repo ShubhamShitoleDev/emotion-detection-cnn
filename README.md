@@ -49,8 +49,8 @@ literature.
 ```bash
 pip install -r requirements.txt
 python train_emotion_cnn.py           # trains and saves the CNN
-python webcam_emotion_detection.py     # live webcam demo
-python confusion_matrix_analysis.py    # per-class error analysis
+python Webcam_emotion_detection.py     # live webcam demo
+python confusion_matrix.py             # per-class error analysis
 ```
 
 Press `q` to quit the webcam window.
@@ -60,11 +60,3 @@ Press `q` to quit the webcam window.
 - Python, TensorFlow/Keras
 - OpenCV (Haar Cascade face detection, webcam capture, visualization)
 - Scikit-learn (confusion matrix, classification report)
-
-## Future Improvements
-
-- Replace Haar Cascade with a DNN-based face detector for more robust
-  detection under varied lighting/angles
-- Address Happy/Surprise confusion with targeted data augmentation or a
-  higher-resolution input
-- Try transfer learning from a face-pretrained backbone
